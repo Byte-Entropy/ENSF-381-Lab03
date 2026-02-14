@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Lab3 -- Exercise 2</title> 
+</head> 
+ 
+<body> 
+    <h1>JavaScript Lab Exercise 2</h1> 
+    <script>  
+    /*
+    function add(a, b=5){
+        return a + b;
+    }
+    function subtract(a, b=5){
+        return a - b;
+    }
+    
+    */
+
+    // arrow syntax
+    const add = (a, b=5) => a + b;
+    const subtract = (a, b=5) => a - b;
+    const multiply = (a, b=5) => a * b;
+    const divide = (a, b=5) => b === 0 ? "Error: Division by zero is not allowed." : a / b;
+
+    function calculator(num1, num2, operation) {
+        return operation(num1, num2);
+    }
+
+    </script> 
+</body> 
+ 
+</html>
